@@ -840,7 +840,8 @@ image::figurer/grunnmur.png[link=figurer/grunnmur.png, Alt="Grunnmur (se også f
 [[bygningsdelelinje]]
 === Objekttype: Bygningsdelelinje
 *Definisjon fra FKB produktspesifikasjon*: linje mellom to bygninger (bygninger registrert i Matrikkelen) som står inntil hverandre
-Merknad: Det kan ofte være vanskelig å registrere bygningsdelelinjer nøyaktig. Usikkerhet i fastleggelsen av bygningsdelelinjen skal synliggjøres gjennom kvalitetskoding (f.eks posisjonskvalitet 81 50).
+
+Merknad: Det kan ofte være vanskelig å registrere bygningsdelelinjer nøyaktig. Bygningsdelelinje kodes ikke med posisjonskvalitet.
  
  
 .Illustrasjon fra produktspesifikasjon av Bygningsdelelinje
