@@ -1,4 +1,4 @@
-// *Pakkens definisjon:* Pakke som inneholder Bygning og AnnenBygning (flate-objektene)
+*Pakkens definisjon:* Pakke som inneholder Bygning og AnnenBygning (flate-objektene)
  
 <<<
 '''
@@ -299,7 +299,7 @@ Bygning registreres med delt flategeometri.
 |..BESKRIVERBYGNING
 |[0..*]
 |===
-// *Pakkens definisjon:* Pakke som inneholder alle bygningsavgrensende objekter
+*Pakkens definisjon:* Pakke som inneholder alle bygningsavgrensende objekter
  
 <<<
 '''
@@ -325,7 +325,7 @@ Dersom deler av en bygning, registrert i matrikkelen, har ingen eller f&#229; ve
 
 Dersom deler av takkanten ikke er synlig kodes den synlige delen som takkant- og den ikke synlige som fiktiv bygningsavgrensning  (gjelder for bygninger som delvis ligger under terreng) .
 
-Takkant skal sammen med Bygningsdelelinje og FiktivBygningsavgrensning danne avgrensning til AnnenBygning/Bygning.
+Takkant skal sammen med Bygningsdelelinje og FiktivBygningsavgrensning danne avgrensning til Bygning.
 
 Takkanten skal registreres sammenhengende i 3D. Unntaket er de tilfellene der det er et Taksprang. Da skal Takkanten kun henge sammen i 2D. 
 
@@ -361,6 +361,11 @@ image::figurer/takkant_takflate.png[link=figurer/takkant_takflate.png, Alt="Ekse
 '''
 .Eksempel på registrering av takkant for bygning med flatt tak (Takkant er tegnet i rødt, Taksprang er tegnet i blått). Det skal lages 2D nodepunkt i takkant som går over taksprang.  
 image::figurer/takkant_taksprang_nodepunkt.png[link=figurer/takkant_taksprang_nodepunkt.png, Alt="Eksempel på registrering av takkant for bygning med flatt tak (Takkant er tegnet i rødt, Taksprang er tegnet i blått). Det skal lages 2D nodepunkt i takkant som går over taksprang.  "]
+ 
+ 
+'''
+.Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d
+image::figurer/Oval_Bygning1.png[link=figurer/Oval_Bygning1.png, Alt="Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d"]
  
  
  
@@ -839,9 +844,9 @@ image::figurer/grunnmur.png[link=figurer/grunnmur.png, Alt="Grunnmur (se også f
  
 [[bygningsdelelinje]]
 === Objekttype: Bygningsdelelinje
-*Definisjon fra FKB produktspesifikasjon*: linje mellom to bygninger (bygninger registrert i Matrikkelen) som står inntil hverandre
+*Definisjon fra FKB produktspesifikasjon*: linje mellom to bygninger (bygninger registrert i Matrikkelen) som st&#229;r inntil hverandre. 
 
-Merknad: Det kan ofte være vanskelig å registrere bygningsdelelinjer nøyaktig. Bygningsdelelinje kodes ikke med posisjonskvalitet.
+Merknad: Det kan ofte v&#230;re vanskelig &#229; registrere bygningsdelelinjer n&#248;yaktig. Bygningsdelelinje kodes ikke med posisjonskvalitet.
  
  
 .Illustrasjon fra produktspesifikasjon av Bygningsdelelinje
@@ -856,7 +861,7 @@ Bygningsdelelinje kan v&#230;re vanskelig &#229; registrere eksakt ved hjelp av 
 
 Der Bygningsdelelinje faller sammen med Taksprang, Bygningslinje eller M&#248;nelinje registreres alltid to objekter.
 
-Bygningsdelelinje skal sammen med Takkant/Grunnmur/Fasadeliv og FiktivBygningsavgrensning danne avgrensning til AnnenBygning/Bygning.
+Bygningsdelelinje skal sammen med Takkant/Grunnmur/Fasadeliv og FiktivBygningsavgrensning danne avgrensning til Bygning.
 
 Der Bygningsdelelinje m&#248;ter andre beskrivende bygningslinjer (m&#248;nelinje etc.), og har lik koordinat i grunnriss og h&#248;yde og samme TRE_D_NIV&#197;, skal det dannes et 3D nodepunkt.
  
@@ -1126,7 +1131,7 @@ image::figurer/fiktivbygningsavgrensning.png[link=figurer/fiktivbygningsavgrensn
 |[1..1]
  
 |===
-// *Pakkens definisjon:* Pakke som inneholder alle beskrivende bygningslinjer
+*Pakkens definisjon:* Pakke som inneholder alle beskrivende bygningslinjer
  
 <<<
 '''
@@ -2735,7 +2740,7 @@ image::figurer/taksprangbunn_eksempel1.png[link=figurer/taksprangbunn_eksempel1.
 |[1..1]
  
 |===
-// *Pakkens definisjon:* Pakke som inneholder alle bygningsvedheng
+*Pakkens definisjon:* Pakke som inneholder alle bygningsvedheng
  
 <<<
 '''
@@ -3410,12 +3415,12 @@ image::figurer/veranda_takoverbygg.png[link=figurer/veranda_takoverbygg.png, Alt
 '''
  
 [[veggfrittstående]]
-=== Objekttype: Veggfrittstående
+=== Objekttype: VeggFrittstående
 *Definisjon fra FKB produktspesifikasjon*: vegg oppsatt for skjerming
  
  
-.Illustrasjon fra produktspesifikasjon av Veggfrittstående
-image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_veggfrittstaende.png[link=http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_veggfrittstaende.png, Alt="Illustrasjon fra produktspesifikasjon: Veggfrittstående"]
+.Illustrasjon fra produktspesifikasjon av VeggFrittstående
+image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_veggfrittstaende.png[link=http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_veggfrittstaende.png, Alt="Illustrasjon fra produktspesifikasjon: VeggFrittstående"]
  
  
 [discrete]
@@ -3465,7 +3470,7 @@ image::figurer/veggfrittstaende_skisse.png[link=figurer/veggfrittstaende_skisse.
 <<<
  
 [discrete]
-==== Egenskapstabell for objekttype: Veggfrittstående
+==== Egenskapstabell for objekttype: VeggFrittstående
 [cols="20,20,20,10", options="header"]
 |===
 |*Navn:* 
@@ -3569,7 +3574,7 @@ image::figurer/veggfrittstaende_skisse.png[link=figurer/veggfrittstaende_skisse.
 |[1..1]
  
 |===
-// *Pakkens definisjon:* Pakke for takoverbygg
+*Pakkens definisjon:* Pakke for takoverbygg
  
 <<<
 '''
