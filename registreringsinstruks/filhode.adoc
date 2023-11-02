@@ -44,14 +44,21 @@ ifeval::[{dokumentstatus} == 2]
 
 WARNING: *Høringsversjon!* Siste gyldige versjon finnes på {reginstr-url-erstatter} 
 
+*Publisert*: {publisert} +
+
 endif::[]
 
 ifeval::[{dokumentstatus} == 3]
 
 WARNING: *Utgått versjon!* Se nyeste versjon på {reginstr-url-ny} 
 
+*Publisert*: {publisert} +
+*Denne versjonen erstatter*: {reginstr-url-erstatter} +
+*Tilhørende produktspesifikasjon finnes på*: {prodspek-url}/{versjon} +
+
 endif::[]
 
+ifeval::[{dokumentstatus} == 1]
 
 *Publisert*: {publisert} +
 *Nyeste gyldige versjon av dokumentet finnes på*: {reginstr-url-ny} +
@@ -59,6 +66,8 @@ endif::[]
 *Denne versjonen erstatter*: {reginstr-url-erstatter} +
 *Tilhørende produktspesifikasjon finnes på*: {prodspek-url}/{versjon} +
 - {uml-url}[HTML-visning av UML-modellen] +
+
+endif::[]
 
 https://kartverket.no/geodataarbeid/geovekst[Geovekst-samarbeidet] er eier og faglig ansvarlig for spesifikasjonen.
 
