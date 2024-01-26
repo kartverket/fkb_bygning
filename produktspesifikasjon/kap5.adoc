@@ -13,7 +13,7 @@
 |"Contains building surface, contour lines describing the builing and objects connected to the building" @en
  
 |designation
-|"Product specification FKB-Bygning 5.0"@en
+|"Product specification FKB-Bygning 5.1"@en
  
 |language
 |no
@@ -25,7 +25,7 @@
 |FKB-Bygning
  
 |SOSI_modellstatus
-|utkastOgSkjult
+|utkast
  
 |SOSI_spesifikasjonstype
 |produktspesifikasjon
@@ -1916,6 +1916,20 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figur
 [cols="20,80"]
 |===
 |*Navn:* 
+|*grense*
+ 
+|Definisjon: 
+|forløp som følger objektets sentrale del (ytterkant)
+ 
+|Multiplisitet: 
+|[1..1]
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/GM_Curve[GM_Curve]
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
 |*medium*
  
 |Definisjon: 
@@ -2060,6 +2074,20 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figur
 [cols="20,80"]
 |===
 |*Navn:* 
+|*grense*
+ 
+|Definisjon: 
+|forløp som følger objektets sentrale del (ytterkant)
+ 
+|Multiplisitet: 
+|[1..1]
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/GM_Curve[GM_Curve]
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
 |*medium*
  
 |Definisjon: 
@@ -2121,6 +2149,20 @@ Merknad: Dersom deler av takkanten ikke er synlig kodes den synlige delen som ta
 image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takkant.png[link=http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takkant.png, Alt="Bilde av et eksempel på objekttypen Takkant, eventuelt med påtegning av streker som viser hvor geometrien til objektet skal måles fra."]
 [discrete]
 ====== Egenskaper
+[cols="20,80"]
+|===
+|*Navn:* 
+|*grense*
+ 
+|Definisjon: 
+|forløp som følger objektets sentrale del (ytterkant)
+ 
+|Multiplisitet: 
+|[1..1]
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/GM_Curve[GM_Curve]
+|===
 [cols="20,80"]
 |===
 |*Navn:* 
