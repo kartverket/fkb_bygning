@@ -33,39 +33,21 @@
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvMønelinje" type="gml:ReferenceType">
+          <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvTakkant" type="gml:ReferenceType">
             <annotation>
-              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <documentation>Krav til delt flategeometri. Avgrensning av bygning (som ikke ligger i matrikkel) med en innmålt avgrensningslinje.</documentation>
               <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Mønelinje</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVMØNELINJE</taggedValue>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Takkant</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVTAKKANT</taggedValue>
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvBygningslinje" type="gml:ReferenceType">
+          <element maxOccurs="unbounded" minOccurs="0" name="vedhengLåvebru" type="gml:ReferenceType">
             <annotation>
-              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <documentation>AnnenBygning kjenner sine bygningsvedheng</documentation>
               <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Bygningslinje</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVBYGNINGSLINJE</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvArkade" type="gml:ReferenceType">
-            <annotation>
-              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Arkade</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVARKADE</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprangBunn" type="gml:ReferenceType">
-            <annotation>
-              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TaksprangBunn</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANGBUNN</taggedValue>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Låvebru</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGLÅVEBRU</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -78,15 +60,6 @@
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatåTopp" type="gml:ReferenceType">
-            <annotation>
-              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakplatåTopp</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅTOPP</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvHjelpepunkt3D" type="gml:ReferenceType">
             <annotation>
               <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
@@ -96,30 +69,39 @@
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatå" type="gml:ReferenceType">
-            <annotation>
-              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Takplatå</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅ</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprang" type="gml:ReferenceType">
-            <annotation>
-              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Taksprang</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANG</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakmur" type="gml:ReferenceType">
             <annotation>
               <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
               <appinfo>
                 <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakMur</targetElement>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKMUR</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvBygningsavgrensningTiltak" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Krav til delt flategeometri. Avgrensning av bygning (som ikke ligger i matrikkel)  ved hjelp av geometriobjekter fra tiltaksbasen.</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:BygningsavgrensningTiltak</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVBYGNINGSAVGRENSNINGTILTAK</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vedhengVeranda" type="gml:ReferenceType">
+            <annotation>
+              <documentation>AnnenBygning kjenner sine bygningsvedheng</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Veranda</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGVERANDA</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvPortrom" type="gml:ReferenceType">
+            <annotation>
+              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Portrom</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVPORTROM</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -141,12 +123,21 @@
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vedhengLåvebru" type="gml:ReferenceType">
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatåTopp" type="gml:ReferenceType">
             <annotation>
-              <documentation>AnnenBygning kjenner sine bygningsvedheng</documentation>
+              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
               <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Låvebru</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGLÅVEBRU</taggedValue>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakplatåTopp</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅTOPP</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvMønelinje" type="gml:ReferenceType">
+            <annotation>
+              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Mønelinje</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVMØNELINJE</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -159,39 +150,12 @@
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vedhengVeranda" type="gml:ReferenceType">
-            <annotation>
-              <documentation>AnnenBygning kjenner sine bygningsvedheng</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Veranda</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGVERANDA</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvTakkant" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Krav til delt flategeometri. Avgrensning av bygning (som ikke ligger i matrikkel) med en innmålt avgrensningslinje.</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Takkant</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVTAKKANT</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvBygningsavgrensningTiltak" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Krav til delt flategeometri. Avgrensning av bygning (som ikke ligger i matrikkel)  ved hjelp av geometriobjekter fra tiltaksbasen.</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:BygningsavgrensningTiltak</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVBYGNINGSAVGRENSNINGTILTAK</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvPortrom" type="gml:ReferenceType">
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvBygningslinje" type="gml:ReferenceType">
             <annotation>
               <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
               <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Portrom</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVPORTROM</taggedValue>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Bygningslinje</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVBYGNINGSLINJE</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -204,12 +168,48 @@
               </appinfo>
             </annotation>
           </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprangBunn" type="gml:ReferenceType">
+            <annotation>
+              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TaksprangBunn</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANGBUNN</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatå" type="gml:ReferenceType">
+            <annotation>
+              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Takplatå</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅ</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprang" type="gml:ReferenceType">
+            <annotation>
+              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Taksprang</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANG</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvFasadeliv" type="gml:ReferenceType">
             <annotation>
               <documentation>Krav til delt flategeometri. Avgrensning av bygning (som ikke ligger i matrikkel) med en innmålt avgrensningslinje.</documentation>
               <appinfo>
                 <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Fasadeliv</targetElement>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVFASADELIV</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvArkade" type="gml:ReferenceType">
+            <annotation>
+              <documentation>AnnenBygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Arkade</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVARKADE</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -359,141 +359,6 @@
               </appinfo>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvMønelinje" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Mønelinje</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVMØNELINJE</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvBygningslinje" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Bygningslinje</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVBYGNINGSLINJE</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvArkade" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Arkade</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVERBYGNING</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprangBunn" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Bygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TaksprangBunn</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANGBUNN</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvHjelpelinje3D" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Hjelpelinje3D</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVHJELPELINJE3D</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatåTopp" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakplatåTopp</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅTOPP</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvHjelpepunkt3D" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Hjelpepunkt3D</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVHJELPEPUNKT3D</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatå" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Takplatå</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅ</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprang" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Taksprang</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANG</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakmur" type="gml:ReferenceType">
-            <annotation>
-              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakMur</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKMUR</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vedhengVeggFrittstående" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Bygning kjenner sine vedheng</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:VeggFrittstående</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGVEGGFRITTSTÅENDE</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vedhengTrappBygg" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Bygning kjenner sine vedheng</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TrappBygg</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGTRAPPBYGG</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vedhengLåvebru" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Bygning kjenner sine vedheng</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Låvebru</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGLÅVEBRU</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vedhengBygningBru" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Bygning kjenner sine vedheng</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:BygningBru</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGBYGNINGBRU</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="vedhengVeranda" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Bygning kjenner sine vedheng</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Veranda</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGVERANDA</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvGrunnmur" type="gml:ReferenceType">
             <annotation>
               <documentation>Krav til delt flategeometri. Avgrensning av bygning med en innmålt avgrensningslinje.</documentation>
@@ -518,6 +383,51 @@
               <appinfo>
                 <targetElement xmlns="http://www.opengis.net/gml/3.2">app:BygningsavgrensningTiltak</targetElement>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVBYGNINGSAVGRENSNINGTILTAK</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvBygningslinje" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Bygningslinje</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVBYGNINGSLINJE</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvHjelpelinje3D" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Hjelpelinje3D</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVHJELPELINJE3D</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vedhengVeranda" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Bygning kjenner sine vedheng</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Veranda</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGVERANDA</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vedhengLåvebru" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Bygning kjenner sine vedheng</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Låvebru</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGLÅVEBRU</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vedhengTrappBygg" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Bygning kjenner sine vedheng</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TrappBygg</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGTRAPPBYGG</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -547,12 +457,102 @@
               </appinfo>
             </annotation>
           </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vedhengBygningBru" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Bygning kjenner sine vedheng</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:BygningBru</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGBYGNINGBRU</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprang" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Taksprang</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANG</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatåTopp" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakplatåTopp</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅTOPP</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvFiktivBygningsavgrensning" type="gml:ReferenceType">
             <annotation>
               <documentation>Krav til delt flategeometri. Avgrensning av bygning med en fiktiv avgrensningslinje</documentation>
               <appinfo>
                 <targetElement xmlns="http://www.opengis.net/gml/3.2">app:FiktivBygningsavgrensning</targetElement>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVFIKTIVBYGNINGSAVGRENSNING</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTaksprangBunn" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Bygning kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TaksprangBunn</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKSPRANGBUNN</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvArkade" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Arkade</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVERBYGNING</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvMønelinje" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Mønelinje</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVMØNELINJE</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="vedhengVeggFrittstående" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Bygning kjenner sine vedheng</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:VeggFrittstående</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEDHENGVEGGFRITTSTÅENDE</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakmur" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakMur</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKMUR</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvHjelpepunkt3D" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Hjelpepunkt3D</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVHJELPEPUNKT3D</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="beskrivesAvTakplatå" type="gml:ReferenceType">
+            <annotation>
+              <documentation>bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:Takplatå</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BESKRIVESAVTAKPLATÅ</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -736,6 +736,11 @@ Eksempel: Valming på tak</documentation>
     <complexContent>
       <extension base="app:KvalitetPåkrevdType">
         <sequence>
+          <element name="grense" type="gml:CurvePropertyType">
+            <annotation>
+              <documentation>forløp som følger objektets sentrale del (ytterkant)</documentation>
+            </annotation>
+          </element>
           <element name="medium" type="gml:CodeType">
             <annotation>
               <documentation>medium: objektets beliggenhet i forhold til jordoverflaten</documentation>
@@ -925,6 +930,11 @@ Merknad: Benyttes hovedsaklig for bygning under oppføring. For bygninger som re
     <complexContent>
       <extension base="app:KvalitetPåkrevdType">
         <sequence>
+          <element name="grense" type="gml:CurvePropertyType">
+            <annotation>
+              <documentation>forløp som følger objektets sentrale del (ytterkant)</documentation>
+            </annotation>
+          </element>
           <element name="medium" type="gml:CodeType">
             <annotation>
               <documentation>medium: objektets beliggenhet i forhold til jordoverflaten</documentation>
@@ -1311,6 +1321,11 @@ Merknad: Dersom deler av takkanten ikke er synlig kodes den synlige delen som ta
     <complexContent>
       <extension base="app:KvalitetPåkrevdType">
         <sequence>
+          <element name="grense" type="gml:CurvePropertyType">
+            <annotation>
+              <documentation>forløp som følger objektets sentrale del (ytterkant)</documentation>
+            </annotation>
+          </element>
           <element name="medium" type="gml:CodeType">
             <annotation>
               <documentation>medium: objektets beliggenhet i forhold til jordoverflaten</documentation>
@@ -1368,21 +1383,21 @@ Eksempel:  'carport' eller tak over bensinpumper</documentation>
               <documentation>sted som objektet eksisterer på</documentation>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvTakoverbyggKant" type="gml:ReferenceType">
-            <annotation>
-              <documentation>Krav til delt flategeometri. Avgrensning av takoverbygg med takoverbyggkant</documentation>
-              <appinfo>
-                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakoverbyggKant</targetElement>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVTAKOVERBYGGKANT</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvFiktivBygningsavgrensning" type="gml:ReferenceType">
             <annotation>
               <documentation>Krav til delt flategeometri. Avgrensning av takoverbygg med en fiktiv avgrensningslinje</documentation>
               <appinfo>
                 <targetElement xmlns="http://www.opengis.net/gml/3.2">app:FiktivBygningsavgrensning</targetElement>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVFIKTIVBYGNINGSAVGRENSNING</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvTakoverbyggKant" type="gml:ReferenceType">
+            <annotation>
+              <documentation>Krav til delt flategeometri. Avgrensning av takoverbygg med takoverbyggkant</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">app:TakoverbyggKant</targetElement>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">AVGRENSESAVTAKOVERBYGGKANT</taggedValue>
               </appinfo>
             </annotation>
           </element>
