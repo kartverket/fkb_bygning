@@ -1133,6 +1133,9 @@ SOSI_navn: MEDIUM +
 |*Rollenavn:* 
 |*beskrivesAvPortrom*
  
+|Definisjon:
+|bygningen kjenner hvilke beskrivede bygningsdetaljer som tilhører bygningen
+ 
 |Multiplisitet: 
 |[0..*]
  
